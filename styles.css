@@ -1,0 +1,148 @@
+:root {
+    --react-color: #58C4DC;
+    --angular-color: linear-gradient(50deg,rgb(244, 6, 44) 0%, rgb(148, 60, 255) 100%);
+    --entity-color: #67217A;
+    --electron-color: #9FEAF9;
+    --claude-color: #D97757;
+    --wpf-color: #0C6FB2;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-line: underline;
+    
+}
+
+@keyframes fade-in-slide {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fis-anim {  
+    animation: .5s fade-in-slide;
+    animation-delay: var(--delay, 0s);
+    animation-fill-mode: backwards;
+}
+
+.header-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: black url("backdrop.gif") center bottom / cover no-repeat fixed;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.nav a {
+    height: 25px;
+}
+
+.global-nav {
+    position: fixed;
+    height: 90px;
+    background-image: linear-gradient(black, transparent);
+    pointer-events: none;
+}
+
+.global-nav a {
+    pointer-events: all;
+}
+
+.profile {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    clip-path: circle();
+    background: #ffffff33 url("face.gif") center / 65% no-repeat;
+    margin-top: 200px;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.showcase-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.showcase {
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+/* chips */
+.chips {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+.skill-chip {
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.react-color {
+    background-color: var(--react-color);
+}
+
+.angular-color {
+    background-image: var(--angular-color);
+}
+
+.entity-color {
+    background-color: var(--entity-color);
+}
+
+.electron-color {
+    background-color: var(--electron-color);
+}
+
+.claude-color {
+    background-color: var(--claude-color);
+}
+
+.wpf-color {
+    background-color: var(--wpf-color);
+}
